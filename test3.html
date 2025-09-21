@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Student Grades & Feedback</title>
+  <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+
+  <h1 id="page-title">Student Grades</h1>
+
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">Kuat Bereket</td>
+        <td>Calculus</td>
+        <td>A</td>
+      </tr>
+      <tr class="highlight-row">
+        <td>Introduction to Finance</td>
+        <td>A+</td>
+      </tr>
+      <tr>
+        <td>Dimash Karim</td>
+        <td>History of Kazakhstan  </td>
+        <td>B+</td>
+      </tr>
+      <tr>
+        <td>Kanat Bereket</td>
+        <td>English</td>
+        <td>B</td>
+      </tr>
+    </tbody>
+  </table>
+
+  
+  <h1 id="form-title">Feedback Form</h1>
+
+  <form class="feedback-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="role">Role:</label>
+    <select id="role" name="role">
+      <option>Student</option>
+      <option>Teacher</option>
+      <option>Other</option>
+    </select>
+
+    <label>Do you like this page?</label>
+    <div class="radio-group">
+      <input type="radio" id="yes" name="like" value="Yes">
+      <label for="yes">Yes</label>
+      <input type="radio" id="no" name="like" value="No">
+      <label for="no">No</label>
+    </div>
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="4" placeholder="Write your feedback here..."></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
